@@ -35,19 +35,6 @@ const Header = () => {
                                 className="self-center"
                             />
                         </MenuButton>
-                        <MenuItems className="py-2 text-sm font-medium text-gray-700">
-                            <MenuItem>
-
-                                <a
-                                    className={`block px-4 py-2  text-gray-700`
-                                    }
-                                    href="/account-settings"
-                                >
-                                    Account settings
-                                </a>
-
-                            </MenuItem>
-                        </MenuItems>
                     </Menu>
                 </div>
 

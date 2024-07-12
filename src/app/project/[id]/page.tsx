@@ -2,6 +2,7 @@
 import Image from "next/image";
 import ProjectShow from "../../../../public/images/project_photo.png"
 import { title } from "process";
+import Link from "next/link";
 
 
 const KpiData = [
@@ -14,10 +15,12 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
     const { id } = params;
     return (
         <div className="h-full">
-            <div className="lg:p-40 m-20 sm:m-6">
+            <div className="lg:p-40 m-10 sm:m-6">
+                <Link href={"/"}>
                 <div className=" flex m-4">
                     <div className=" text-[#3C6E71] sm:text-sm font-medium">Initiative Management  &nbsp;</div>  <div className=" text-black font-medium sm:text-sm"> / Urban Air Quality Improvement Projects</div>
                 </div>
+                </Link>
                 <div className="2xl:mt-10 xl:mt-10 md:mt-3  mt-2 ">
 
                     <div className="flex flex-1 flex-col  w-full bg-white rounded-lg px-4 py-4 lg:px-20 lg:py-16" >
@@ -30,14 +33,14 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
                                 />
                             </div>
                             <div className=" flex flex-col lg:w-2/3 w-full lg:pl-8 line">
-                                <div className=" font-semibold text-black text-4xl sm:text-lg justify-start">
+                                <div className=" font-semibold flex text-black text-4xl sm:text-lg justify-start sm:justify-center">
                                     Urban Air Quality Improvement Projects
                                 </div>
-                                <div className="flex justify-between mt-4 w-4/5 sm:w-full">
+                                <div className="flex mt-4 lg:w-full sm:w-full justify-center ">
                                     <div className="bg-[#E8E8E8] px-4 py-2 sm:px-2 sm:py-1 text-black lg:text-base rounded-md text-sm sm:text-xs flex self-center">
                                          2024
                                     </div>
-                                    <div className="bg-[#E8E8E8] px-4 py-2 sm:px-2 sm:py-1 text-black lg:text-base rounded-md text-sm sm:text-xs flex self-center">
+                                    <div className="bg-[#E8E8E8] mx-4 px-4 py-2 lg:px-1 sm:px-2 sm:py-1 text-black lg:text-base rounded-md text-sm sm:text-xs flex self-center">
                                      Charlotte,NC
                                     </div>
                                     <div className="bg-[#E8E8E8] px-4 py-2 sm:px-2 sm:py-1 text-black lg:text-base rounded-md text-sm flex  sm:text-xs self-center">
