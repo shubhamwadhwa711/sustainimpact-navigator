@@ -14,78 +14,79 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
     const { id } = params;
     return (
         <div className="h-full">
-            <div className="2xl:p-40">
+            <div className="lg:p-40 m-20 sm:m-6">
                 <div className=" flex m-4">
-                    <div className=" text-[#3C6E71] font-medium">Initiative Management  &nbsp;</div>  <div className=" text-black font-medium"> / Urban Air Quality Improvement Projects</div>
+                    <div className=" text-[#3C6E71] sm:text-sm font-medium">Initiative Management  &nbsp;</div>  <div className=" text-black font-medium sm:text-sm"> / Urban Air Quality Improvement Projects</div>
                 </div>
                 <div className="2xl:mt-10 xl:mt-10 md:mt-3  mt-2 ">
 
-                    <div className="flex flex-1 flex-col w-full bg-white rounded-lg px-16 py-12" >
-                        <div className="flex ">
-                            <div className=" flex w-4/5">
+                    <div className="flex flex-1 flex-col  w-full bg-white rounded-lg px-4 py-4 lg:px-20 lg:py-16" >
+                        <div className="flex  lg:flex-row flex-col">
+                            <div className=" flex lg:w-4/5  w-full">
                                 <Image
                                     src={ProjectShow}
                                     alt="project_pic"
                                     className="w-full"
                                 />
                             </div>
-                            <div className=" flex flex-col w-2/3 xl:pl-8 line">
-                                <div className=" font-semibold text-black text-4xl">
+                            <div className=" flex flex-col lg:w-2/3 w-full lg:pl-8 line">
+                                <div className=" font-semibold text-black text-4xl sm:text-lg justify-start">
                                     Urban Air Quality Improvement Projects
                                 </div>
-                                <div className="flex justify-between mt-4 w-4/5">
-                                    <div className="bg-[#E8E8E8] px-4 py-2 text-black text-base rounded-md">
-                                        2024
+                                <div className="flex justify-between mt-4 w-4/5 sm:w-full">
+                                    <div className="bg-[#E8E8E8] px-4 py-2 sm:px-2 sm:py-1 text-black lg:text-base rounded-md text-sm sm:text-xs flex self-center">
+                                         2024
                                     </div>
-                                    <div className="bg-[#E8E8E8] px-4 py-2 text-black text-base rounded-md">
-                                        Charlotte, NC
+                                    <div className="bg-[#E8E8E8] px-4 py-2 sm:px-2 sm:py-1 text-black lg:text-base rounded-md text-sm sm:text-xs flex self-center">
+                                     Charlotte,NC
                                     </div>
-                                    <div className="bg-[#DDF8E4] border border-[#54DA7A] px-4 py-2 text-black text-base rounded-md">
-                                        33% Complete
+                                    <div className="bg-[#E8E8E8] px-4 py-2 sm:px-2 sm:py-1 text-black lg:text-base rounded-md text-sm flex  sm:text-xs self-center">
+                                     33% Complete
                                     </div>
                                 </div>
 
                                 <hr className="h-px my-6 bg-gray-500  border-1 dark:bg-gray-700"></hr>
 
-                                <div className="text-lg text-[#727272]">
+                                <div className="text-lg text-[#727272] inline-block ">
                                     Urban Air Quality Improvement Projects implement measures to reduce urban air pollution and improve air quality in urban areas.
                                     They aim to achieve public health and environmental sustainability by reducing pollution levels and improving air quality.< span className="text-[#278FFF]">(more)</span>
                                 </div>
                             </div>
 
                         </div>
-                        <div className=" py-3 text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+                        <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+
                             <ul className="flex flex-wrap -mb-px">
-                                <li className="me-2 px-3">
-                                    <div className=" text-lg font-medium pointer inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300">Actions</div>
+                                <li className="me-2 ">
+                                    <div className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Actions</div>
                                 </li>
-                                <li className="me-2 px-3">
-                                    <div className=" text-lg font-medium pointer inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300">Performance</div>
+                                <li className="me-2 ">
+                                    <div className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Performance</div>
                                 </li>
-                                <li className="me-2 px-3">
-                                    <div className=" text-lg font-medium pointer inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300">Journey Map</div>
+                                <li className="me-2">
+                                    <div className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Journey Map</div>
                                 </li>
-                                <li className="me-2 px-3">
-                                    <div className=" text-lg font-medium pointer inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300">Outcomes</div>
+                                <li className="me-2 ">
+                                    <div className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Outcomes</div>
                                 </li>
-                                <li className="me-2 px-3">
-                                    <div className=" text-lg font-medium pointer inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300">Budget</div>
+                                <li className="me-2 ">
+                                    <div className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Budget</div>
                                 </li>
-                                <li className="me-2 px-3">
-                                    <div className=" text-lg font-medium pointer inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300">History</div>
+                                <li className="me-2 ">
+                                    <div className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">History</div>
                                 </li>
-                                <li className="me-2 px-3">
-                                    <div className=" text-lg font-medium pointer inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300">Schedule</div>
+                                <li className="me-2 ">
+                                    <div className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Schedule</div>
                                 </li>
                             </ul>
                         </div>
 
-                        <div className="h-20 flex justify-between xl:py-4  sm:py-2">
-                            <div className="flex w-full">
-                                <p className="text-xl font-semibold">Key Performance Indicators</p>
+                        <div className="h-20 flex justify-between py-4 sm:py-2 flex-row sm:flex-col">
+                            <div className="flex w-full sm:justify-center">
+                                <p className="text-xl font-semibold sm:text-sm">Key Performance Indicators</p>
                             </div>
                             <div className="flex grow">
-                            <button type="button" style={{ width: "200px", height: "40px" }} className="text-[#3C6E71]  bg-white border border-[#3C6E71]  hover:bg-zinc-500  font-medium rounded-full text-lg m-auto w-30 ">
+                            <button type="button"  className="text-[#3C6E71] w-[200px] h-[40px] sm:w-[150px] sm:h-[28px] sm:text-sm  bg-white border border-[#3C6E71]  hover:bg-zinc-500  font-medium rounded-full text-lg m-auto  ">
                                 Add or Edit KPI
                                 </button>
                             </div>
@@ -94,10 +95,10 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
 
                         <div className="w-full bg-[#F2F2F2]  rounded-md xl:p-6 ">
                             {KpiData.length > 0 && KpiData.map((item, index) => (
-                                <div key={index} className="rounded-md bg-white flex p-4 m-2 drop-shadow-lg">
-                                    <div className=" w-10 h-10 bg-[#F2F2F2] flex-initial border border-[#C4C4C4]">
+                                <div key={index} className="rounded-md bg-white p-4 m-2 drop-shadow-lg flex">
+                                    <div className=" w-10 h-10 bg-[#F2F2F2]  border border-[#C4C4C4]  m-auto">
                                     </div>
-                                    <div className="text-lg text-black font-semibold pl-4 self-center">
+                                    <div className="text-lg sm:text-sm text-black font-semibold pl-4 sm:pl-2 flex-1 justify-start">
 
                                         {item.title}
                                      </div>   
@@ -106,13 +107,13 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
                         </div>
 
 
-                        <div className="h-20 flex justify-between xl:py-4 mt-2  sm:py-2">
-                            <div className="flex w-full">
-                                <p className="text-xl font-semibold">Macro-level Objectives - UN Sustainable Development Goals</p>
+                        <div className="h-20 flex justify-between py-4 sm:py-2 flex-row sm:flex-col">
+                            <div className="flex w-full sm:justify-center">
+                                <p className="text-xl font-semibold sm:text-sm">Macro-level Objectives - UN Sustainable Development Goals</p>
                             </div>
                             <div className="flex grow">
-                                <button type="button" style={{ width: "200px", height: "40px" }} className="text-[#3C6E71]  bg-white border border-[#3C6E71]  hover:bg-zinc-500  font-medium rounded-full text-lg m-auto w-30 ">
-                                Add or Edit SDG
+                            <button type="button"  className="text-[#3C6E71] w-[200px] h-[40px] sm:w-[150px] sm:h-[28px] sm:text-sm  bg-white border border-[#3C6E71]  hover:bg-zinc-500  font-medium rounded-full text-lg m-auto  ">
+                                Add or Edit SGD
                                 </button>
                             </div>
                         </div>
@@ -120,16 +121,17 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
 
                         <div className="w-full bg-[#F2F2F2]  rounded-md xl:p-6 ">
                             {KpiData.length > 0 && KpiData.map((item, index) => (
-                                <div key={index} className="rounded-md bg-white flex p-4 m-2 drop-shadow-lg">
-                                    <div className=" w-10 h-10 bg-[#F2F2F2] flex-initial border border-[#C4C4C4]">
+                                <div key={index} className="rounded-md bg-white p-4 m-2 drop-shadow-lg flex">
+                                    <div className=" w-10 h-10 bg-[#F2F2F2]  border border-[#C4C4C4]  m-auto">
                                     </div>
-                                    <div className="text-lg text-black font-semibold pl-4 self-center">
+                                    <div className="text-lg sm:text-sm text-black font-semibold pl-4 sm:pl-2 flex-1 justify-start">
 
                                         {item.title}
                                      </div>   
                                 </div>
                             ))}
                         </div>
+
                     </div>
                 </div>
             </div>

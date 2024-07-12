@@ -8,15 +8,13 @@ const Card = (props: any) => {
     const { data } = props;
 
     return (
-        <Link href={`/project/${encodeURIComponent(data._id)}`}>
-            <div key={data._id} className="w-[340px] flex-col h-[480px]  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-
+  
+            <div key={data._id} className="flex-col h-[480px] sm:mx-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <Link href={`/project/${encodeURIComponent(data._id)}`}>
                 <Image
                     src={CardPhoto}
                     alt="Card Imagpriority"
-                    width={350}
-                    height={400}
-
+                    priority
                 />
                 <div className="p-4 flex flex-col">
                     <p className="font-semibold text-lg m-auto text-black	dark:text-white">{data.title}</p>
@@ -27,9 +25,9 @@ const Card = (props: any) => {
                         <div className=" ml-3 font-normal text-[#C4C4C4] text-[14px]" >{data.status} Completed</div>
                     </div>
                 </div>
-
+                </Link>
             </div>
-        </Link>
+     
 
     )
 

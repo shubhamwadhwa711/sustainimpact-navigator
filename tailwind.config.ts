@@ -18,6 +18,11 @@ const config: Config = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
     },
+    screens: {
+      'sm': {'max': '576px', 'min':'0px'},
+      'md': {'max': '1440px', 'min':'576px'},
+      'lg':{'max': '2550px', 'min':'1440px'},
+    },
   },
   plugins: [],
 };

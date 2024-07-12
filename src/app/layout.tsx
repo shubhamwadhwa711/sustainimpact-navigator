@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import SidebarCollaspe from "@/components/Sidebar";
-import { Footer } from "@/components/footer";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,19 +20,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <body className="">
-        <div className="flex flex-col ">
+        
+        <div className="flex flex-col  w-full  sm:w-[calc(134%)]">
+        <Header />
 
-          <Header />
           <div className="flex w-100">
+           
             <div className=" flex w-1/10">
-            <SidebarCollaspe />
+              <SidebarCollaspe />
             </div>
             <div className="flex-col flex-1">
               {children}
             </div>
           </div>
-     
+
         </div>
       </body>
     </html>
