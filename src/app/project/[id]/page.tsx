@@ -37,13 +37,13 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
                                     Urban Air Quality Improvement Projects
                                 </div>
                                 <div className="flex mt-4 lg:w-full sm:w-full justify-center ">
-                                    <div className="bg-[#E8E8E8] px-4 py-2 sm:px-2 sm:py-1 text-black lg:text-base rounded-md text-sm sm:text-xs flex self-center">
+                                    <div className="bg-[#E8E8E8] px-4 py-2 sm:px-2 sm:py-1 text-black lg:text-[14px] rounded-md text-sm sm:text-xs flex self-center">
                                          2024
                                     </div>
-                                    <div className="bg-[#E8E8E8] mx-4 px-4 py-2 lg:px-1 sm:px-2 sm:py-1 text-black lg:text-base rounded-md text-sm sm:text-xs flex self-center">
+                                    <div className="bg-[#E8E8E8] mx-4 px-4 py-2 lg:px-1 sm:px-2 sm:py-1 text-black lg:text-[14px] rounded-md text-sm sm:text-xs flex self-center">
                                      Charlotte,NC
                                     </div>
-                                    <div className="bg-[#E8E8E8] px-4 py-2 sm:px-2 sm:py-1 text-black lg:text-base rounded-md text-sm flex  sm:text-xs self-center">
+                                    <div className="bg-[#E8E8E8] px-4 py-2 sm:px-2 sm:py-1 text-black lg:text-[14px] rounded-md text-sm flex  sm:text-xs self-center">
                                      33% Complete
                                     </div>
                                 </div>
